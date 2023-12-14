@@ -18,12 +18,7 @@ public class Main {
             }
         }
 
-        //threadPool.waitUntilAllTaskFinished();
-        try {
-            Thread.sleep(4000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        threadPool.waitUntilAllTaskFinished();
         threadPool.stop();
     }
 }
